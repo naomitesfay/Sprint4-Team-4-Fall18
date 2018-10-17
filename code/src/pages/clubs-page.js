@@ -17,7 +17,8 @@ componentDidMount() {
 
 handleSearch = (event) => {
     this.setState({
-      search: event.target.value
+      search: event.target.value,
+      allClubs: this.allClubs
     })
   }
 
@@ -27,7 +28,7 @@ handleSearch = (event) => {
       return (
         <div className="search-field">
           <form>
-            <input type="text" onChange={this.handleSearch}/>
+            <input type="text" value={this.state.allClubs} onChange={this.handleSearch}/>
           </form>
 
         </div>
