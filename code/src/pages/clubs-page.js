@@ -35,20 +35,16 @@ handleSearch = (event) => {
 
           <div>
             <ul>
-              {allClubs.map((club) => {
-                  return (<li>club.name</li>)
+              {this.state.allClubs.map((club) => {
+                  return <li key={club.id}>{club.name}</li>
                 })
+              }
             </ul>
           </div>
 
-
-        
-
         </div>
       )
-
   }
-
-
+}
 
 export default ClubsPage
