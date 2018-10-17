@@ -7,10 +7,13 @@ class ClubsPage extends React.Component {
   search: []
 }
 
-componentDidMount() {
-  fetch(`https://api.www.svenskaspel.se/player/sponsorship/autocomplete?search=${this.state.search}&numResponses=100`).then((response) => {
+fetchResults() {
+  fetch(`https://api.www.svenskaspel.se/player/sponsorship/autocomplete?search=${this.state.search}&numResponses=5`).then((response) => {
     return response.json()
   }).then((json) => {
+    this.setState({
+      allClubs: json.data
+    })
     console.log(json)
   })
 }
@@ -18,8 +21,7 @@ componentDidMount() {
 handleSearch = (event) => {
     this.setState({
       search: event.target.value,
-      allClubs: this.allClubs
-    })
+    }, () => this.fetchResults())
   }
 
   render() {
@@ -28,12 +30,23 @@ handleSearch = (event) => {
       return (
         <div className="search-field">
           <form>
-            <input type="text" value={this.state.allClubs} onChange={this.handleSearch}/>
+            <input type="text" value={this.state.search} onChange={this.handleSearch}/>
           </form>
+
+          <div>
+            <ul>
+              {allClubs.map((club) => {
+                  return (<li>club.name</li>)
+                })
+            </ul>
+          </div>
+
+
+        
 
         </div>
       )
-    }
+
   }
 
 
