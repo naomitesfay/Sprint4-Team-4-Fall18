@@ -2,6 +2,7 @@ import React from "react"
 import { HashRouter as Router, Route, Link } from "react-router-dom"
 import LandingPage from "./pages/landing-page"
 import ClubsPage from "./pages/clubs-page"
+import ExercisePage from "./pages/exercise-page"
 
 class App extends React.Component {
 
@@ -11,6 +12,7 @@ class App extends React.Component {
           <div>
             <Route path="/" exact component={ClubsPage} />
             <Route path="/landingpage" component={LandingPage} />
+            <Route path="/exercise" component={ExercisePage} />
           </div>
       </Router>
     )
