@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 class ClubsPage extends React.Component {
 
@@ -26,7 +27,6 @@ handleSearch = (event) => {
 
   render() {
 
-    // if (this.state.allClubs.length > 0) {
       return (
         <div className="search-field">
           <form>
