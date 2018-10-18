@@ -36,7 +36,7 @@ handleSearch = (event) => {
           <div>
             <ul>
               {this.state.allClubs.map((club) => {
-                  return <li key={club.id}>{club.name}</li>
+                  return <Link to="/landingpage"><li key={club.id}>{club.name}</li></Link>
                 })
               }
             </ul>

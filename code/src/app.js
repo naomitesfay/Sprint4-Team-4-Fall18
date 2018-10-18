@@ -8,12 +8,10 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
-          <ClubsPage />
           <div>
-            <Route path="/landingpage" exact="true" components={LandingPage} />
+            <Route path="/" exact component={ClubsPage} />
+            <Route path="/landingpage" component={LandingPage} />
           </div>
-        </div>
       </Router>
     )
   }
