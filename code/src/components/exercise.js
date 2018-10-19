@@ -14,7 +14,7 @@ class Exercise extends React.Component {
         <div className="buttonBox">
           <h2>Medium</h2>
           <button>biking to work</button>
-          <button>2min planking in the office</button>
+          <button>Planking in the office 2min</button>
           <button>25 squats</button>
         </div>
         <div className="buttonBox">
