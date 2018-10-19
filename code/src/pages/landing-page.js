@@ -6,7 +6,8 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div>
-        <Link to="/exercise">Landing Page</Link>
+        <h1>LANDING PAGE</h1>
+        <Link to="/exercise">register exercise</Link>
       </div>
     )
   }

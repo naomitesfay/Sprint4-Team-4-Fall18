@@ -1,11 +1,14 @@
 import React from "react"
+import "./exercisePage.css"
+import Exercise from "../components/exercise"
 
 class ExercisePage extends React.Component {
 
   render() {
     return (
       <div>
-        Exercise page
+        <h1>EXERCISE PAGE</h1>
+        <Exercise/>
       </div>
     )
   }
