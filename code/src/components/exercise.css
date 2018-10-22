@@ -4,9 +4,22 @@
   justify-content: space-between;
   width: 100%;
   padding: 5%;
+  padding-bottom: 0;
 }
 
 .buttonBox {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.counter {
+  font-size: 400px;
+  display: flex;
+  justify-content: center;
 }

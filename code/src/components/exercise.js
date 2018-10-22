@@ -37,31 +37,43 @@ class Exercise extends React.Component {
       count: points
     })
   }
+  handleIncrementThree = () => {
+    const points = this.state.count + 3
+    this.setState({
+      count: points
+    })
+    localStorage.setItem("points", JSON.stringify(points))
+    this.setState({
+      count: points
+    })
+  }
 
   render() {
     return (
       <div>
         <div className="exerciseForm">
           <div className="buttonBox">
-            <h2>Easy</h2>
+            <h2>Easy: 1 point</h2>
             <button onClick={this.handleIncrementOne}>taking the stairs</button>
-            <button>taking a walk</button>
-            <button>One hour standing at work</button>
+            <button onClick={this.handleIncrementOne}>taking a walk</button>
+            <button onClick={this.handleIncrementOne}>One hour standing at work</button>
           </div>
           <div className="buttonBox">
-            <h2>Medium</h2>
+            <h2>Medium: 2 points</h2>
             <button onClick={this.handleIncrementTwo}>biking to work</button>
-            <button>Planking in the office 2min</button>
-            <button>25 squats</button>
+            <button onClick={this.handleIncrementTwo}>Planking in the office 2min</button>
+            <button onClick={this.handleIncrementTwo}>25 squats</button>
           </div>
           <div className="buttonBox">
-            <h2>Hard</h2>
-            <button>Going to the gym</button>
-            <button>Spinning</button>
-            <button>Static wallsit for 5min</button>
+            <h2>Hard: 3 points</h2>
+            <button onClick={this.handleIncrementThree}>Going to the gym</button>
+            <button onClick={this.handleIncrementThree}>Spinning</button>
+            <button onClick={this.handleIncrementThree}>Static wallsit for 5min</button>
           </div>
         </div>
-        <span>{this.state.count}</span>
+        <div className="counter">
+          <span>{this.state.count}</span>
+        </div>
       </div>
     )
   }
