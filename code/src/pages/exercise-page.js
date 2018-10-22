@@ -1,7 +1,7 @@
 import React from "react"
 import "./exercisePage.css"
 import Exercise from "../components/exercise"
-import Calendar from 'react-calendar'
+import Calendar from "../components/calendar"
 
 class ExercisePage extends React.Component {
 
