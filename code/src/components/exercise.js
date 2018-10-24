@@ -11,7 +11,7 @@ class Exercise extends React.Component {
       }
     } else {
       this.state = {
-        storeCount: 0
+        count: 0
       }
     }
   }
