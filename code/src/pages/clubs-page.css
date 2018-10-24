@@ -1,0 +1,31 @@
+*:focus {
+    outline: none;
+}
+
+.search-field {
+  text-align: center;
+}
+
+form input {
+  padding: 10px;
+  width: 300px;
+  border-color: grey;
+}
+
+form input:focus {
+  border-color: red !important;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  margin: 5px;
+}

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import "./clubs-page.css"
 
 class ClubsPage extends React.Component {
 
@@ -33,7 +34,7 @@ handleSearch = (event) => {
           <h1>CHOOSE YOUR CLUB AND SWEAT FOR GLORY!</h1>
           <div className="search-field">
             <form>
-              <input type="text" value={this.state.search} onChange={this.handleSearch}/>
+              <input type="text" placeholder="Search for your club..." value={this.state.search} onChange={this.handleSearch}/>
             </form>
 
             <div>
