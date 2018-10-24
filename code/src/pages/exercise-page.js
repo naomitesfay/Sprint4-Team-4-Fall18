@@ -9,6 +9,7 @@ class ExercisePage extends React.Component {
     return (
       <div>
         <h1>EXERCISE PAGE</h1>
+        <h2>{this.props.selectedTeam}</h2>
         <CalendarDate />
         <Exercise/>
       </div>

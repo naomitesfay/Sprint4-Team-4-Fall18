@@ -21,7 +21,7 @@ class App extends React.Component {
           <div>
             <Route path="/" exact render={(props) => <ClubsPage setSelectedTeam={this.setSelectedTeam} {...props}/>} />
             <Route path="/landingpage" render={(props) => <LandingPage selectedTeam={this.state.selectedTeam} {...props}/>} />
-            <Route path="/exercise" component={ExercisePage} />
+            <Route path="/exercise" render={(props) => <ExercisePage selectedTeam={this.state.selectedTeam} {...props}/>} />
           </div>
       </Router>
     )

@@ -8,6 +8,7 @@ class LandingPage extends React.Component {
     return (
       <div>
         <h1>LANDING PAGE</h1>
+        <h2>{this.props.selectedTeam}</h2>
         <Link to="/exercise">register exercise</Link>
       </div>
     )
