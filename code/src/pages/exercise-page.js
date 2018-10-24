@@ -8,9 +8,7 @@ class ExercisePage extends React.Component {
   render() {
     return (
       <div>
-        <div className="header">
-          <h1>EXERCISE PAGE</h1>
-        </div>
+        <h1>EXERCISE PAGE</h1>
         <CalendarDate />
         <Exercise/>
       </div>
