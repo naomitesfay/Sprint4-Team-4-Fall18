@@ -1,6 +1,7 @@
 import React from "react"
+import Calendar from "react-calendar"
 
-class Calendar extends React.Component {
+class CalendarDate extends React.Component {
 
   render() {
     return (

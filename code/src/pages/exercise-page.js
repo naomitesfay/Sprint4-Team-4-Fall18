@@ -1,7 +1,7 @@
 import React from "react"
 import "./exercisePage.css"
 import Exercise from "../components/exercise"
-import Calendar from "../components/calendar"
+import CalendarDate from "../components/calendar"
 
 class ExercisePage extends React.Component {
 
@@ -11,7 +11,7 @@ class ExercisePage extends React.Component {
         <div className="header">
           <h1>EXERCISE PAGE</h1>
         </div>
-        <Calendar />
+        <CalendarDate />
         <Exercise/>
       </div>
     )
