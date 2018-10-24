@@ -11,14 +11,13 @@ class Exercise extends React.Component {
       }
     } else {
       this.state = {
-        count: 0
+        storeCount: 0
       }
     }
   }
 
   handleIncrementOne = () => {
     const points = this.state.count + 1
-    console.log(this.state.count)
     this.setState({
       count: points
     })
@@ -76,6 +75,9 @@ class Exercise extends React.Component {
           <span>{this.state.count}</span>
         </div>
       </div>
+
+
+
     )
   }
 

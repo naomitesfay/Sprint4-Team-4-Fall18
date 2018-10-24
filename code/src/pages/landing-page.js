@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import ClubsPage from "./clubs-page"
 
 class LandingPage extends React.Component {
 

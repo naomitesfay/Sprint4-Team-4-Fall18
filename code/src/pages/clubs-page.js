@@ -25,6 +25,7 @@ handleSearch = (event) => {
     }, () => this.fetchResults())
   }
 
+
   render() {
 
       return (
@@ -38,7 +39,7 @@ handleSearch = (event) => {
             <div>
               <ul>
                 {this.state.allClubs.map((club) => {
-                    return <Link to="/landingpage"><li key={club.id}>{club.name}</li></Link>
+                    return <Link to="/landingpage"><li onClick={() => this.props.setSelectedTeam(club.name)} key={club.id}>{club.name}</li></Link>
                   })
                 }
               </ul>
