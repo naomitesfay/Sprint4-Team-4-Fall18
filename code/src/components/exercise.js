@@ -21,7 +21,7 @@ class Exercise extends React.Component {
     this.setState({
       count: points
     })
-    localStorage.setItem("points", JSON.stringify(points))
+    localStorage.setItem(this.props.team, JSON.stringify(points))
     this.setState({
       count: points
     })
@@ -32,7 +32,7 @@ class Exercise extends React.Component {
     this.setState({
       count: points
     })
-    localStorage.setItem("points", JSON.stringify(points))
+    localStorage.setItem(this.props.team, JSON.stringify(points))
     this.setState({
       count: points
     })
@@ -42,7 +42,7 @@ class Exercise extends React.Component {
     this.setState({
       count: points
     })
-    localStorage.setItem("points", JSON.stringify(points))
+    localStorage.setItem(this.props.team, JSON.stringify(points))
     this.setState({
       count: points
     })
