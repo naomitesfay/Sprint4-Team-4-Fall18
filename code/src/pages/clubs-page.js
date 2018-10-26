@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "./clubs-page.css"
+import "./clubs-page.scss"
 
 class ClubsPage extends React.Component {
 

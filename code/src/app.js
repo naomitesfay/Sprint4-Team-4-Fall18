@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Link } from "react-router-dom"
 import LandingPage from "./pages/landing-page"
 import ClubsPage from "./pages/clubs-page"
 import ExercisePage from "./pages/exercise-page"
-import "./components/exercise.css"
+import "./components/exercise.scss"
 
 class App extends React.Component {
 

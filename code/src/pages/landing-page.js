@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import ClubsPage from "./clubs-page"
+import "./landing-page.scss"
 
 class LandingPage extends React.Component {
 
@@ -17,10 +18,16 @@ class LandingPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>LANDING PAGE</h1>
-        <h2>{this.props.selectedTeam} {this.state.points}</h2>
-        <Link to="/exercise">register exercise</Link>
+      <div className="landing-container">
+        <div className="header">
+          <h1>LANDING PAGE</h1>
+        </div>
+        <div className="teampoints">
+          <h2>{this.props.selectedTeam} {this.state.points}</h2>
+        </div>
+        <div className="link-exercise">
+          <Link to="/exercise">register exercise</Link>
+        </div>
       </div>
     )
   }

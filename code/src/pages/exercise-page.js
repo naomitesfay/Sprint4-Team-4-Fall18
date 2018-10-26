@@ -1,5 +1,5 @@
 import React from "react"
-import "./exercisePage.css"
+import "./exercisePage.scss"
 import Exercise from "../components/exercise"
 import CalendarDate from "../components/calendar"
 
@@ -7,7 +7,7 @@ class ExercisePage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="exercise-container">
         <h1>EXERCISE PAGE</h1>
         <h2>{this.props.selectedTeam}</h2>
         <CalendarDate />
