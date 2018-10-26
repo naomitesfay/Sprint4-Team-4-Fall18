@@ -12,6 +12,17 @@
   justify-content: center;
 }
 
+.exercise-image {
+  height: 80px;
+  width: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.exercise-image img {
+  height: 100%;
+}
+
 button {
   margin: 5px;
   padding: 5px;

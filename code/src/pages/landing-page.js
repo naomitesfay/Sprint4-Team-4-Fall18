@@ -20,13 +20,16 @@ class LandingPage extends React.Component {
     return (
       <div className="landing-container">
         <div className="header">
-          <h1>LANDING PAGE</h1>
+          <h1>MY CLUB</h1>
         </div>
         <div className="teampoints">
           <h2>{this.props.selectedTeam} {this.state.points}</h2>
         </div>
         <div className="link-exercise">
-          <Link to="/exercise">register exercise</Link>
+          <Link to="/exercise">Register exercise</Link>
+        </div>
+        <div className="club-image">
+          <img src="images/Asset 2kids.png" />
         </div>
       </div>
     )

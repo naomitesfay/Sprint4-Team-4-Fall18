@@ -46,6 +46,9 @@ handleSearch = (event) => {
               </ul>
             </div>
           </div>
+          <div className="club-image">
+            <img src="images/group.png" />
+          </div>  
         </div>
       )
   }
